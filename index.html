@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | AI & Creative Work</title>
+  <style>
+    :root {
+      --plum: #6B3F69;
+      --mauve: #D9B8D5;
+      --cream: #FFF3E8;
+      --dark: #352735;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--plum);
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      font-size: 23px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--mauve);
+    }
+
+    .hero {
+      padding: 90px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #FFF3E8, #EBD6E7);
+    }
+
+    .hero .tag {
+      color: var(--plum);
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      color: var(--plum);
+      font-size: clamp(34px, 6vw, 55px);
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--plum);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #52304F;
+    }
+
+    section {
+      padding: 65px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--plum);
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .skill {
+      background: var(--white);
+      color: var(--plum);
+      border: 1px solid var(--mauve);
+      padding: 9px 17px;
+      border-radius: 25px;
+    }
+
+    .projects {
+      background: #F8EAF4;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      border: 1px solid var(--mauve);
+      box-shadow: 0 5px 18px #6B3F6910;
+    }
+
+    .card h3 {
+      color: var(--plum);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .label {
+      color: #795675;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: var(--plum);
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--plum);
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>My Portfolio</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">AI/ML Projects</a>
+      <a href="#creative">Creative Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <p class="tag">AI • Technology • Creativity</p>
+      <h1>Hello, I'm Tehreem!</h1>
+      <p>
+        An Artificial Intelligence undergraduate exploring
+        Python, data analysis, AI projects and creative design.
+        Welcome to my portfolio!
+      </p>
+      <a class="btn" href="#projects">Explore My Work</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about">
+        <p>
+          I am an Artificial Intelligence undergraduate
+          interested in Python programming, data analysis,
+          machine learning and digital content creation.
+          I enjoy learning new tools and building practical
+          projects while improving my technical skills.
+        </p>
+        <div class="skills">
+          <span class="skill">Python</span>
+          <span class="skill">NumPy</span>
+          <span class="skill">Pandas</span>
+          <span class="skill">Matplotlib</span>
+          <span class="skill">Canva</span>
+          <span class="skill">CapCut</span>
+          <span class="skill">AI Content Creation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title">AI/ML Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Smart Mathematics Solver</h3>
+          <p>
+            A Python-based mathematics solver project
+            designed to explore mathematical problem solving.
+          </p>
+          <span class="label">Python • SymPy</span>
+        </article>
+
+        <article class="card">
+          <h3>Data Analysis</h3>
+          <p>
+            Data exploration and visualization practice
+            using Python data analysis libraries.
+          </p>
+          <span class="label">Python • Pandas • Matplotlib</span>
+        </article>
+
+        <article class="card">
+          <h3>Machine Learning</h3>
+          <p>
+            A space to showcase machine learning experiments,
+            models and results as they are completed.
+          </p>
+          <span class="label">Python • Machine Learning</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="creative">
+      <h2 class="section-title">Creative Portfolio</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Social Media Designs</h3>
+          <p>
+            A collection of Canva post designs and
+            social media content samples.
+          </p>
+          <span class="label">Canva • Graphic Design</span>
+        </article>
+
+        <article class="card">
+          <h3>AI Image Creation</h3>
+          <p>
+            AI-generated visual concepts and creative
+            image samples made with AI tools.
+          </p>
+          <span class="label">AI Tools • Visual Content</span>
+        </article>
+
+        <article class="card">
+          <h3>Product Advertisements</h3>
+          <p>
+            Creative concepts for product promotions,
+            branding and digital marketing.
+          </p>
+          <span class="label">Content Creation • Design</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>
+        Interested in my work? Feel free to contact me
+        for opportunities and collaborations.
+      </p>
+      <p style="margin-top: 15px;">
+        Email: Add your professional email here
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tehreem | Personal Portfolio</p>
+    <p>Learning • Creating • Growing</p>
+  </footer>
+
+</body>
+</html>
